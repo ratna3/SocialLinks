@@ -199,6 +199,26 @@
             box-shadow: 0 8px 25px rgba(0, 119, 181, 0.6);
         }
 
+        .phone {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+        }
+
+        .phone:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.6);
+        }
+
+        .email {
+            background: linear-gradient(135deg, #dc3545, #fd7e14);
+            box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+        }
+
+        .email:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(220, 53, 69, 0.6);
+        }
+
         .footer {
             margin-top: 30px;
             font-size: 0.9rem;
@@ -272,6 +292,8 @@
         .social-link:nth-child(2) { animation-delay: 0.2s; }
         .social-link:nth-child(3) { animation-delay: 0.3s; }
         .social-link:nth-child(4) { animation-delay: 0.4s; }
+        .social-link:nth-child(5) { animation-delay: 0.5s; }
+        .social-link:nth-child(6) { animation-delay: 0.6s; }
 
         @keyframes slideInLeft {
             to {
@@ -337,6 +359,16 @@
                 <i class="fab fa-linkedin"></i>
                 <span>LinkedIn</span>
             </a>
+
+            <a href="tel:+13095692237" class="social-link phone" aria-label="Call me at +1 309-569-2237">
+                <i class="fas fa-phone"></i>
+                <span>+1 309-569-2237</span>
+            </a>
+
+            <a href="mailto:ratnakirtiscr@gmail.com" class="social-link email" aria-label="Send me an email">
+                <i class="fas fa-envelope"></i>
+                <span>ratnakirtiscr@gmail.com</span>
+            </a>
         </div>
 
         <div class="footer">
@@ -377,6 +409,15 @@
                 link.rel = 'preconnect';
                 link.href = href;
                 document.head.appendChild(link);
+            });
+
+            // Add click tracking for phone and email
+            document.querySelector('.phone').addEventListener('click', function() {
+                console.log('Phone call initiated');
+            });
+
+            document.querySelector('.email').addEventListener('click', function() {
+                console.log('Email client opened');
             });
         });
     </script>

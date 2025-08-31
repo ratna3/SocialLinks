@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connect with Ratna Kirti on social media platforms - WhatsApp, Instagram, GitHub, and LinkedIn">
+    <meta name="keywords" content="Ratna Kirti, social media, contact, links">
+    <meta name="author" content="Ratna Kirti">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ratna Kirti - Connect With Me">
+    <meta property="og:description" content="Find me on WhatsApp, Instagram, GitHub, and LinkedIn">
+    <meta property="og:type" content="website">
+    
+    <title>Ratna Kirti - Connect With Me</title>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            max-width: 400px;
+            width: 100%;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile-section {
+            margin-bottom: 40px;
+        }
+
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 3rem;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .profile-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-subtitle {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 300;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .social-link:hover::before {
+            left: 100%;
+        }
+
+        .social-link i {
+            margin-right: 12px;
+            font-size: 1.3rem;
+        }
+
+        .whatsapp {
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+
+        .instagram {
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+            box-shadow: 0 4px 15px rgba(131, 58, 180, 0.4);
+        }
+
+        .instagram:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(131, 58, 180, 0.6);
+        }
+
+        .github {
+            background: linear-gradient(135deg, #333, #24292e);
+            box-shadow: 0 4px 15px rgba(36, 41, 46, 0.4);
+        }
+
+        .github:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(36, 41, 46, 0.6);
+        }
+
+        .linkedin {
+            background: linear-gradient(135deg, #0077b5, #005885);
+            box-shadow: 0 4px 15px rgba(0, 119, 181, 0.4);
+        }
+
+        .linkedin:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 119, 181, 0.6);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+
+            .profile-name {
+                font-size: 1.8rem;
+            }
+
+            .profile-avatar {
+                width: 100px;
+                height: 100px;
+                font-size: 2.5rem;
+            }
+
+            .social-link {
+                padding: 12px 15px;
+                font-size: 1rem;
+            }
+
+            .social-link i {
+                font-size: 1.2rem;
+                margin-right: 10px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .container {
+                padding: 25px 15px;
+            }
+
+            .profile-name {
+                font-size: 1.6rem;
+            }
+
+            .social-link {
+                padding: 10px 12px;
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Dark theme improvements */
+        @media (prefers-color-scheme: dark) {
+            .container {
+                background: rgba(0, 0, 0, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        /* Animation for links */
+        .social-link {
+            animation: slideInLeft 0.6s ease-out forwards;
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+
+        .social-link:nth-child(1) { animation-delay: 0.1s; }
+        .social-link:nth-child(2) { animation-delay: 0.2s; }
+        .social-link:nth-child(3) { animation-delay: 0.3s; }
+        .social-link:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Loading animation */
+        .loading {
+            display: none;
+        }
+
+        /* Accessibility */
+        .social-link:focus {
+            outline: 3px solid rgba(255, 255, 255, 0.6);
+            outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                background: white;
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            .profile-name, .profile-subtitle {
+                color: #333;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-avatar">
+                👨‍💻
+            </div>
+            <h1 class="profile-name">Ratna Kirti</h1>
+            <p class="profile-subtitle">Connect with me on social media</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://wa.me/qr/3XI2Q43ANM54I1" target="_blank" rel="noopener noreferrer" class="social-link whatsapp" aria-label="Contact me on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+
+            <a href="https://www.instagram.com/ratnakirtiii?igsh=MTQ3bG55aWZxYjBmNQ==" target="_blank" rel="noopener noreferrer" class="social-link instagram" aria-label="Follow me on Instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+
+            <a href="https://github.com/ratna3" target="_blank" rel="noopener noreferrer" class="social-link github" aria-label="View my GitHub profile">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ratna-kirti/" target="_blank" rel="noopener noreferrer" class="social-link linkedin" aria-label="Connect with me on LinkedIn">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Ratna Kirti. Made with ❤️</p>
+        </div>
+    </div>
+
+    <script>
+        // Add loading states for better UX
+        document.querySelectorAll('.social-link').forEach(link => {
+            link.addEventListener('click', function() {
+                // Optional: Add loading state or analytics tracking here
+                console.log('Navigating to:', this.href);
+            });
+        });
+
+        // Add keyboard navigation support
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                if (e.target.classList.contains('social-link')) {
+                    e.target.click();
+                }
+            }
+        });
+
+        // Performance optimization: Preload external resources
+        window.addEventListener('load', function() {
+            // Preconnect to external domains
+            const preconnectLinks = [
+                'https://wa.me',
+                'https://www.instagram.com',
+                'https://github.com',
+                'https://www.linkedin.com'
+            ];
+            
+            preconnectLinks.forEach(href => {
+                const link = document.createElement('link');
+                link.rel = 'preconnect';
+                link.href = href;
+                document.head.appendChild(link);
+            });
+        });
+    </script>
+</body>
+</html>

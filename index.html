@@ -82,6 +82,14 @@
             color: white;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             animation: pulse 2s infinite;
+            overflow: hidden;
+        }
+
+        .profile-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         @keyframes pulse {
@@ -214,6 +222,11 @@
                 font-size: 2.5rem;
             }
 
+            .profile-avatar img {
+                width: 100%;
+                height: 100%;
+            }
+
             .social-link {
                 padding: 12px 15px;
                 font-size: 1rem;
@@ -298,7 +311,7 @@
     <div class="container">
         <div class="profile-section">
             <div class="profile-avatar">
-                👨‍💻
+                <img src="ratna_kirti-HDR.jpeg" alt="Ratna Kirti Profile Picture" loading="lazy">
             </div>
             <h1 class="profile-name">Ratna Kirti</h1>
             <p class="profile-subtitle">Connect with me on social media</p>
